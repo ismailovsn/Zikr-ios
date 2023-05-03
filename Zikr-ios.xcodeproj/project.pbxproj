@@ -17,6 +17,7 @@
 		25DF21162A012BAA00631BE6 /* BigTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21152A012BAA00631BE6 /* BigTileView.swift */; };
 		25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21532A0278BB00631BE6 /* MorningZikrView.swift */; };
 		25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21552A0278DE00631BE6 /* EveningZikrView.swift */; };
+		25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215A2A027A7B00631BE6 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		25DF21152A012BAA00631BE6 /* BigTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTileView.swift; sourceTree = "<group>"; };
 		25DF21532A0278BB00631BE6 /* MorningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningZikrView.swift; sourceTree = "<group>"; };
 		25DF21552A0278DE00631BE6 /* EveningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningZikrView.swift; sourceTree = "<group>"; };
+		25DF215A2A027A7B00631BE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				25DF21152A012BAA00631BE6 /* BigTileView.swift */,
+				25DF215A2A027A7B00631BE6 /* SettingsView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				25DF21162A012BAA00631BE6 /* BigTileView.swift in Sources */,
 				25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */,
 				25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */,
+				25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */,
 				25DF20EE2A012AB300631BE6 /* ContentView.swift in Sources */,
 				25DF20EC2A012AB300631BE6 /* Zikr_iosApp.swift in Sources */,
 			);

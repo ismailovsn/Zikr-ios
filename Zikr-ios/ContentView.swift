@@ -9,6 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        TabView {
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+        }
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
