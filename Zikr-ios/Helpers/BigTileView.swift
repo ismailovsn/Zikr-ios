@@ -11,7 +11,7 @@ struct BigTileView: View {
     let title: String
     let imageName: String
     
-    var body: some View {
+    private var bigTileContent: some View {
         VStack(alignment: .leading) {
             Image(systemName: imageName)
                 .font(.system(size: 30))
@@ -27,6 +27,22 @@ struct BigTileView: View {
         .background(Color.white)
         .cornerRadius(20)
         .shadow(radius: 5)
+    }
+    
+    var body: some View {
+        Group {
+            if title == "In the Morning" {
+                NavigationLink(destination: MorningZikrView()) {
+                    bigTileContent
+                }
+                .buttonStyle(PlainButtonStyle())
+            } else {
+                NavigationLink(destination: EveningZikrView()) {
+                    bigTileContent
+                }
+                .buttonStyle(PlainButtonStyle())
+            }
+        }
     }
 }
 
