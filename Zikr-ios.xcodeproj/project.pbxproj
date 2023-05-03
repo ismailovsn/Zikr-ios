@@ -18,6 +18,7 @@
 		25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21532A0278BB00631BE6 /* MorningZikrView.swift */; };
 		25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21552A0278DE00631BE6 /* EveningZikrView.swift */; };
 		25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215A2A027A7B00631BE6 /* SettingsView.swift */; };
+		25DF215D2A027F1B00631BE6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215C2A027F1B00631BE6 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		25DF21532A0278BB00631BE6 /* MorningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningZikrView.swift; sourceTree = "<group>"; };
 		25DF21552A0278DE00631BE6 /* EveningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningZikrView.swift; sourceTree = "<group>"; };
 		25DF215A2A027A7B00631BE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		25DF215C2A027F1B00631BE6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */,
 				25DF20ED2A012AB300631BE6 /* ContentView.swift */,
+				25DF215C2A027F1B00631BE6 /* MainView.swift */,
 				25DF21572A02790B00631BE6 /* Helpers */,
 				25DF21532A0278BB00631BE6 /* MorningZikrView.swift */,
 				25DF21552A0278DE00631BE6 /* EveningZikrView.swift */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25DF21162A012BAA00631BE6 /* BigTileView.swift in Sources */,
+				25DF215D2A027F1B00631BE6 /* MainView.swift in Sources */,
 				25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */,
 				25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */,
 				25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */,
