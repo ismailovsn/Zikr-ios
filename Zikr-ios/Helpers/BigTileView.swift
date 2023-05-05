@@ -19,7 +19,7 @@ struct BigTileView: View {
 
             
             Text(title)
-                .font(.headline)
+                .font(Font.system(.body, design: .rounded))
                 .foregroundColor(.black)
                 .fontWeight(.bold)
         }
@@ -27,6 +27,7 @@ struct BigTileView: View {
         .background(Color.white)
         .cornerRadius(20)
         .shadow(radius: 5)
+        
     }
     
     var body: some View {
@@ -48,6 +49,6 @@ struct BigTileView: View {
 
 struct BigTileView_Previews: PreviewProvider {
     static var previews: some View {
-        BigTileView(title: "Morning", imageName: "sun.max.circle.fill")
+        BigTileView(title: "Тонгги Зикрлар", imageName: "sun.max.circle.fill")
     }
 }

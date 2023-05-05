@@ -9,7 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 20) {
+            BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
+            
+            BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
+        }
     }
 }
 

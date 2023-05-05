@@ -19,13 +19,6 @@ struct ContentView: View {
                     Label("Settings", systemImage: "gear")
                 }
         }
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
     }
 }
 
