@@ -7,9 +7,7 @@
 
 import Foundation
 
-import Foundation
-
-struct Supplication: Codable, Identifiable {
+struct Zikr: Codable, Identifiable {
     let id: Int
     let title: String
     let arabicText: String

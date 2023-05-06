@@ -7,19 +7,19 @@
 
 import Foundation
 
-func loadSupplicationsData() -> [Supplication] {
-    guard let url = Bundle.main.url(forResource: "SupplicationsData", withExtension: "json") else {
-        fatalError("SupplicationsData.json file not found.")
+func loadZikrData() -> [Zikr] {
+    guard let url = Bundle.main.url(forResource: "ZikrData", withExtension: "json") else {
+        fatalError("ZikrData.json file not found.")
     }
     
     do {
         let data = try Data(contentsOf: url)
         let decoder = JSONDecoder()
-        let supplications = try decoder.decode([Supplication].self, from: data)
+        let supplications = try decoder.decode([Zikr].self, from: data)
         return supplications
     } catch {
-        print("Error decoding SupplicationsData.json: \(error)")
-        fatalError("Failed to decode SupplicationsData.json file.")
+        print("Error decoding ZikrData.json: \(error)")
+        fatalError("Failed to decode ZikrData.json file.")
     }
 }
 
