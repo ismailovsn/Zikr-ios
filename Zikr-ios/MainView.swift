@@ -29,8 +29,10 @@ struct MainView: View {
                         ForEach(supplications) { zikr in
                             NavigationLink(destination: ZikrView(zikr: zikr)) {
                                 Text(zikr.title)
+                                
                             }
                         }
+                        
                     }
                 }
             }
