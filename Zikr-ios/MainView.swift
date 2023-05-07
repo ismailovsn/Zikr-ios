@@ -28,28 +28,37 @@ struct MainView: View {
                         .frame(width: geo.size.width)
                         
                         
-                        VStack(alignment: .leading, spacing: 20.0) {
+                        VStack {
                             ForEach(supplications) { zikr in
                                 NavigationLink{
                                     ZikrView(zikr: zikr)
                                 } label: {
-                                    HStack {
-                                        Text(zikr.title)
-                                            .foregroundColor(.black)
-                                            .multilineTextAlignment(.leading)
-                                            .clipShape(Capsule())
-                                            .background(.white)
-                                    }
+                                    RowView(zikr: zikr)
+                                        .padding(.horizontal)
+                                        .foregroundColor(.black)
+//                                    HStack {
+//                                        Text(zikr.title)
+//                                            .foregroundColor(.black)
+//                                            .multilineTextAlignment(.leading)
+//                                            .clipShape(Capsule())
+//                                            .background(.white)
+//                                    }
                                     
                                 }
                             }
                         }
                         
+                        .background(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding(.horizontal)
                     }
                 }
             }
             .navigationTitle("Zikr")
+            .background(.gray)
+            
         }
+        
     }
 }
 

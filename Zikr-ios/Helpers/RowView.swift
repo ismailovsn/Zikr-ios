@@ -11,8 +11,14 @@ struct RowView: View {
     let zikr: Zikr
 
     var body: some View {
-        HStack{
-            Text(zikr.title)
+        
+        VStack {
+            Divider()
+            HStack{
+                Text(zikr.title)
+                Spacer()
+            }
+            
         }
         
     }
