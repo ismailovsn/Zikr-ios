@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+struct Arrow: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        return path
+    }
+}
+
 struct MainView: View {
     let supplications: [Zikr] = loadZikrData()
     
@@ -36,14 +46,17 @@ struct MainView: View {
                                     RowView(zikr: zikr)
                                         .padding(.horizontal)
                                         .foregroundColor(.black)
-//                                    HStack {
-//                                        Text(zikr.title)
-//                                            .foregroundColor(.black)
-//                                            .multilineTextAlignment(.leading)
-//                                            .clipShape(Capsule())
-//                                            .background(.white)
-//                                    }
-                                    
+                                        .listStyle(.plain)
+                                        .overlay(
+                                            Arrow()
+                                                .stroke(Color.gray, lineWidth: 2)
+                                                .frame(width: 10, height: 6)
+                                                .cornerRadius(0)
+                                                .rotationEffect(.degrees(90))
+                                                .padding(.trailing, 20)
+                                                .padding(.bottom, 5),
+                                            alignment: .bottomTrailing
+                                        )
                                 }
                             }
                         }
