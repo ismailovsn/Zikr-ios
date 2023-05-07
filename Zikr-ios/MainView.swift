@@ -20,7 +20,33 @@ struct Arrow: Shape {
 struct MainView: View {
     let supplications: [Zikr] = loadZikrData()
     
-    
+    var zikrList: some View {
+        VStack {
+            ForEach(supplications) { zikr in
+                NavigationLink{
+                    ZikrView(zikr: zikr)
+                } label: {
+                    RowView(zikr: zikr)
+                        .padding(.horizontal)
+                        .foregroundColor(.black)
+                        .listStyle(.plain)
+                        .overlay(
+                            Arrow()
+                                .stroke(Color.gray, lineWidth: 2)
+                                .frame(width: 10, height: 6)
+                                .cornerRadius(0)
+                                .rotationEffect(.degrees(90))
+                                .padding(.trailing, 20)
+                                .padding(.bottom, 5),
+                            alignment: .bottomTrailing
+                        )
+                }
+            }
+        }
+        .background(.white)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .padding(.horizontal)
+    }
     
     var body: some View {
         NavigationView {
@@ -37,33 +63,7 @@ struct MainView: View {
                         .frame(width: geo.size.width * 0.9)
                         .frame(width: geo.size.width)
                         
-                        
-                        VStack {
-                            ForEach(supplications) { zikr in
-                                NavigationLink{
-                                    ZikrView(zikr: zikr)
-                                } label: {
-                                    RowView(zikr: zikr)
-                                        .padding(.horizontal)
-                                        .foregroundColor(.black)
-                                        .listStyle(.plain)
-                                        .overlay(
-                                            Arrow()
-                                                .stroke(Color.gray, lineWidth: 2)
-                                                .frame(width: 10, height: 6)
-                                                .cornerRadius(0)
-                                                .rotationEffect(.degrees(90))
-                                                .padding(.trailing, 20)
-                                                .padding(.bottom, 5),
-                                            alignment: .bottomTrailing
-                                        )
-                                }
-                            }
-                        }
-                        
-                        .background(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .padding(.horizontal)
+                        zikrList
                     }
                 }
             }
