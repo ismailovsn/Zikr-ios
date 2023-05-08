@@ -51,22 +51,16 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                GeometryReader { geo in
+            ScrollView(.vertical) {
                     VStack (spacing: 25) {
-                        HStack(spacing: 20) {
+                        HStack(spacing: 35) {
                             BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
-//                              .frame(width: geo.size.width * 0.45)
                             
                             BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
-//                            .frame(width: geo.size.width * 0.45)
                         }
-                        .frame(width: geo.size.width * 0.9)
-                        .frame(width: geo.size.width)
                         
                         zikrList
                     }
-                }
             }
             .navigationTitle("Zikr")
             .background(Color("background"))
