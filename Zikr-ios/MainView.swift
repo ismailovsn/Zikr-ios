@@ -7,15 +7,7 @@
 
 import SwiftUI
 
-struct Arrow: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        path.move(to: CGPoint(x: rect.minX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
-        return path
-    }
-}
+
 
 struct MainView: View {
     let supplications: [Zikr] = loadZikrData()
@@ -30,16 +22,6 @@ struct MainView: View {
                         .padding(.horizontal)
                         .foregroundColor(.black)
                         .listStyle(.plain)
-                        .overlay(
-                            Arrow()
-                                .stroke(Color.gray, lineWidth: 2)
-                                .frame(width: 10, height: 6)
-                                .cornerRadius(0)
-                                .rotationEffect(.degrees(90))
-                                .padding(.trailing, 20)
-                                .padding(.bottom, 5),
-                            alignment: .bottomTrailing
-                        )
                 }
             }
         }
@@ -53,7 +35,7 @@ struct MainView: View {
         NavigationView {
             ScrollView(.vertical) {
                     VStack (spacing: 25) {
-                        HStack(spacing: 35) {
+                        HStack(spacing: 15) {
                             BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
                             
                             BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")

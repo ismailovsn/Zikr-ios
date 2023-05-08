@@ -17,13 +17,13 @@ struct ContentView: View {
                 .tabItem {
                     Label("Main", systemImage: "book.fill")
                 }
-//                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+            
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
                 .toolbarBackground(.visible, for: .tabBar)
-                .blur(radius: 10)
         }
         
 //        .toolbarBackground(.visible, for: .tabBar)

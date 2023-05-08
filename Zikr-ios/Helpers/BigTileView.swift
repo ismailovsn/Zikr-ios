@@ -16,12 +16,12 @@ struct BigTileView: View {
             Image(systemName: imageName)
                 .font(.system(size: 30))
                 .foregroundColor(.black)
-
             
             Text(title)
                 .font(Font.system(.body, design: .rounded))
                 .foregroundColor(.black)
                 .fontWeight(.bold)
+                .padding(.trailing, 10)
         }
         .padding()
         .background(Color("contentBackground"))
