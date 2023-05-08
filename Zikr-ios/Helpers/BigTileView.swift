@@ -15,17 +15,15 @@ struct BigTileView: View {
         VStack(alignment: .leading) {
             Image(systemName: imageName)
                 .font(.system(size: 30))
-                .foregroundColor(.black)
+                .foregroundColor(Color("contentForeground"))
             
-            Text(title)
-                .font(Font.system(.body, design: .rounded))
-                .foregroundColor(.black)
+            Text(title)                .foregroundColor(Color("contentForeground"))
                 .fontWeight(.bold)
                 .padding(.trailing, 10)
         }
         .padding()
         .background(Color("contentBackground"))
-        .cornerRadius(20)
+        .cornerRadius(10)
         .shadow(radius: 5)
         
     }

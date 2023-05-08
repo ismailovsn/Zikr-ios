@@ -28,6 +28,7 @@ struct RowView: View {
                 Text(zikr.title)
                     .multilineTextAlignment(.leading)
                     .padding()
+                    .foregroundColor(Color("contentForeground"))
                 Spacer()
                 Arrow()
                     .stroke(Color.gray, lineWidth: 2)
