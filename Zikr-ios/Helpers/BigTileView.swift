@@ -15,18 +15,17 @@ struct BigTileView: View {
         VStack(alignment: .leading) {
             Image(systemName: imageName)
                 .font(.system(size: 30))
-                .foregroundColor(.black)
-
+                .foregroundColor(Color("contentForeground"))
             
-            Text(title)
-                .font(.headline)
-                .foregroundColor(.black)
+            Text(title)                .foregroundColor(Color("contentForeground"))
                 .fontWeight(.bold)
+                .padding(.trailing, 10)
         }
         .padding()
-        .background(Color.white)
-        .cornerRadius(20)
+        .background(Color("contentBackground"))
+        .cornerRadius(10)
         .shadow(radius: 5)
+        
     }
     
     var body: some View {
@@ -48,6 +47,6 @@ struct BigTileView: View {
 
 struct BigTileView_Previews: PreviewProvider {
     static var previews: some View {
-        BigTileView(title: "Morning", imageName: "sun.max.circle.fill")
+        BigTileView(title: "Тонгги Зикрлар", imageName: "sun.max.circle.fill")
     }
 }

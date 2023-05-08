@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Жума тонгида",
+    "arabicText": "أسْتَغْفِرُ اللهَ الَّذِي لاَ إِلَهَ إِلاَّ هُوَ الْحَيُّ القَيُّومُ وَأَتُوبُ إِلَيْهِ",
+    "translation": "Ҳай ва қаййум сифатли Зотдан бошқа илоҳ йўқ ва Унга истиғфор айтаман, Унга тавба қиламан.",
+    "transliteration": "Астағфируллоҳаллазий ла илаҳа илла ҳувал ҳаййул қоййум ва атубу илайҳ."
+  },
+  {
+    "id": 2,
+    "title": "Ухлаш учун тўшакка ётганда",
+    "arabicText": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
+    "translation": "Эй Раббим, Сенинг исминг билан ётдим ва Сенинг исминг билан тураман. Агар менинг руҳимни олсанг, унга раҳм қил. Агар уни қўйиб юборсанг, худди солиҳ бандаларингни сақлаганингдек, уни ҳам ҳифзу ҳимоянгга ол.",
+    "transliteration": "Бисмика роббий вазоъту жамбий ва бика арфаъуҳу, ин амсакта нафсий фарҳамҳа ва ин арсалтаҳа фаҳфазҳа бима таҳфазу биҳи ъибадакас солиҳийн."
+  },
+  {
+    "id": 3,
+    "title": "Безовта бўлиб, ухлай олмаганда",
+    "arabicText": "Arabic text of supplication 3",
+    "translation": "Translation of supplication 3",
+    "transliteration": "Transliteration of supplication 3"
+  },
+  {
+    "id": 4,
+    "title": "Уйқуда қўрққанда",
+    "arabicText": "Arabic text of supplication 4",
+    "translation": "Translation of supplication 4",
+    "transliteration": "Transliteration of supplication 4"
+  },
+  {
+    "id": 5,
+    "title": "Тушида ёқтирмаган нарсани кўрганда",
+    "arabicText": "Arabic text of supplication 1",
+    "translation": "Translation of supplication 1",
+    "transliteration": "Transliteration of supplication 1"
+  },
+  {
+    "id": 6,
+    "title": "Уйқудан уйғонганда",
+    "arabicText": "Arabic text of supplication 2",
+    "translation": "Translation of supplication 2",
+    "transliteration": "Transliteration of supplication 2"
+  },
+  {
+    "id": 7,
+    "title": "Таҳорат қилганда",
+    "arabicText": "Arabic text of supplication 3",
+    "translation": "Translation of supplication 3",
+    "transliteration": "Transliteration of supplication 3"
+  },
+  {
+    "id": 8,
+    "title": "Масжидга кетаётганда",
+    "arabicText": "Arabic text of supplication 4",
+    "translation": "Translation of supplication 4",
+    "transliteration": "Transliteration of supplication 4"
+  },
+  {
+    "id": 9,
+    "title": "Масжидга кираётганда",
+    "arabicText": "Arabic text of supplication 1",
+    "translation": "Translation of supplication 1",
+    "transliteration": "Transliteration of supplication 1"
+  },
+  {
+    "id": 10,
+    "title": "Масжиддан чиқаётганда",
+    "arabicText": "Arabic text of supplication 2",
+    "translation": "Translation of supplication 2",
+    "transliteration": "Transliteration of supplication 2"
+  },
+  {
+    "id": 11,
+    "title": "Азон ва иқоматни эшитганда",
+    "arabicText": "Arabic text of supplication 3",
+    "translation": "Translation of supplication 3",
+    "transliteration": "Transliteration of supplication 3"
+  },
+  {
+    "id": 12,
+    "title": "Намоз бошлаганда",
+    "arabicText": "Arabic text of supplication 4",
+    "translation": "Translation of supplication 4",
+    "transliteration": "Transliteration of supplication 4"
+  },
+  {
+    "id": 13,
+    "title": "Масжиддан ",
+    "arabicText": "Arabic text of supplication 2",
+    "translation": "Translation of supplication 2",
+    "transliteration": "Transliteration of supplication 2"
+  },
+  {
+    "id": 14,
+    "title": "Азон ва  эшитганда",
+    "arabicText": "Arabic text of supplication 3",
+    "translation": "Translation of supplication 3",
+    "transliteration": "Transliteration of supplication 3"
+  },
+  {
+    "id": 15,
+    "title": "Намоз ",
+    "arabicText": "Arabic text of supplication 4",
+    "translation": "Translation of supplication 4",
+    "transliteration": "Transliteration of supplication 4"
+  }
+]

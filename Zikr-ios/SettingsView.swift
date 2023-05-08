@@ -18,6 +18,7 @@ struct SettingsView: View {
         .foregroundColor(.white)
         .background(.blue)
         .clipShape(Capsule())
+    
     }
 }
 

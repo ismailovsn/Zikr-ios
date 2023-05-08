@@ -19,6 +19,11 @@
 		25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21552A0278DE00631BE6 /* EveningZikrView.swift */; };
 		25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215A2A027A7B00631BE6 /* SettingsView.swift */; };
 		25DF215D2A027F1B00631BE6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215C2A027F1B00631BE6 /* MainView.swift */; };
+		25DF215F2A052AE600631BE6 /* ZikrData.json in Resources */ = {isa = PBXBuildFile; fileRef = 25DF215E2A052AE600631BE6 /* ZikrData.json */; };
+		25DF21612A052B2000631BE6 /* Zikr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21602A052B2000631BE6 /* Zikr.swift */; };
+		25DF21632A052B5400631BE6 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21622A052B5400631BE6 /* DataLoader.swift */; };
+		25DF21652A05C6D300631BE6 /* ZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21642A05C6D300631BE6 /* ZikrView.swift */; };
+		25DF21B12A078BFF00631BE6 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21B02A078BFF00631BE6 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,7 @@
 		25DF20E82A012AB300631BE6 /* Zikr-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikr-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosApp.swift; sourceTree = "<group>"; };
 		25DF20ED2A012AB300631BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		25DF20EF2A012AB400631BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25DF20EF2A012AB400631BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Zikr-ios/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		25DF20F22A012AB400631BE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25DF20F82A012AB400631BE6 /* Zikr-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zikr-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DF20FC2A012AB400631BE6 /* Zikr_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosTests.swift; sourceTree = "<group>"; };
@@ -52,8 +57,13 @@
 		25DF21152A012BAA00631BE6 /* BigTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTileView.swift; sourceTree = "<group>"; };
 		25DF21532A0278BB00631BE6 /* MorningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningZikrView.swift; sourceTree = "<group>"; };
 		25DF21552A0278DE00631BE6 /* EveningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningZikrView.swift; sourceTree = "<group>"; };
-		25DF215A2A027A7B00631BE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		25DF215A2A027A7B00631BE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = "Zikr-ios/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
 		25DF215C2A027F1B00631BE6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		25DF215E2A052AE600631BE6 /* ZikrData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ZikrData.json; sourceTree = "<group>"; };
+		25DF21602A052B2000631BE6 /* Zikr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zikr.swift; sourceTree = "<group>"; };
+		25DF21622A052B5400631BE6 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		25DF21642A05C6D300631BE6 /* ZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikrView.swift; sourceTree = "<group>"; };
+		25DF21B02A078BFF00631BE6 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +117,12 @@
 				25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */,
 				25DF20ED2A012AB300631BE6 /* ContentView.swift */,
 				25DF215C2A027F1B00631BE6 /* MainView.swift */,
+				25DF215A2A027A7B00631BE6 /* SettingsView.swift */,
 				25DF21572A02790B00631BE6 /* Helpers */,
-				25DF21532A0278BB00631BE6 /* MorningZikrView.swift */,
-				25DF21552A0278DE00631BE6 /* EveningZikrView.swift */,
+				25DF21692A05DC0900631BE6 /* ZikrPage */,
+				25DF21682A05DBF600631BE6 /* MorningEveningPage */,
+				25DF21622A052B5400631BE6 /* DataLoader.swift */,
+				25DF215E2A052AE600631BE6 /* ZikrData.json */,
 				25DF20EF2A012AB400631BE6 /* Assets.xcassets */,
 				25DF20F12A012AB400631BE6 /* Preview Content */,
 			);
@@ -145,9 +158,27 @@
 			isa = PBXGroup;
 			children = (
 				25DF21152A012BAA00631BE6 /* BigTileView.swift */,
-				25DF215A2A027A7B00631BE6 /* SettingsView.swift */,
+				25DF21B02A078BFF00631BE6 /* RowView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25DF21682A05DBF600631BE6 /* MorningEveningPage */ = {
+			isa = PBXGroup;
+			children = (
+				25DF21532A0278BB00631BE6 /* MorningZikrView.swift */,
+				25DF21552A0278DE00631BE6 /* EveningZikrView.swift */,
+			);
+			path = MorningEveningPage;
+			sourceTree = "<group>";
+		};
+		25DF21692A05DC0900631BE6 /* ZikrPage */ = {
+			isa = PBXGroup;
+			children = (
+				25DF21602A052B2000631BE6 /* Zikr.swift */,
+				25DF21642A05C6D300631BE6 /* ZikrView.swift */,
+			);
+			path = ZikrPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +287,7 @@
 			files = (
 				25DF20F32A012AB400631BE6 /* Preview Assets.xcassets in Resources */,
 				25DF20F02A012AB400631BE6 /* Assets.xcassets in Resources */,
+				25DF215F2A052AE600631BE6 /* ZikrData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,13 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25DF21612A052B2000631BE6 /* Zikr.swift in Sources */,
 				25DF21162A012BAA00631BE6 /* BigTileView.swift in Sources */,
 				25DF215D2A027F1B00631BE6 /* MainView.swift in Sources */,
 				25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */,
 				25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */,
 				25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */,
+				25DF21652A05C6D300631BE6 /* ZikrView.swift in Sources */,
 				25DF20EE2A012AB300631BE6 /* ContentView.swift in Sources */,
+				25DF21B12A078BFF00631BE6 /* RowView.swift in Sources */,
 				25DF20EC2A012AB300631BE6 /* Zikr_iosApp.swift in Sources */,
+				25DF21632A052B5400631BE6 /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -448,6 +484,7 @@
 				DEVELOPMENT_TEAM = A4222NNV64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Zikr;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,6 +514,7 @@
 				DEVELOPMENT_TEAM = A4222NNV64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Zikr;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
