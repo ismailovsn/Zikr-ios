@@ -43,9 +43,10 @@ struct MainView: View {
                 }
             }
         }
-        .background(.white)
+        .background(Color("contentBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .padding(.horizontal)
+        .shadow(radius: 5)
     }
     
     var body: some View {
@@ -55,10 +56,10 @@ struct MainView: View {
                     VStack (spacing: 25) {
                         HStack(spacing: 20) {
                             BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
-//                                                .frame(width: geo.size.width * 0.45)
+//                              .frame(width: geo.size.width * 0.45)
                             
                             BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
-//                                                .frame(width: geo.size.width * 0.45)
+//                            .frame(width: geo.size.width * 0.45)
                         }
                         .frame(width: geo.size.width * 0.9)
                         .frame(width: geo.size.width)
@@ -68,7 +69,7 @@ struct MainView: View {
                 }
             }
             .navigationTitle("Zikr")
-            .background(.gray)
+            .background(Color("background"))
             
         }
         

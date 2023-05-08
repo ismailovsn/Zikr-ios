@@ -82,5 +82,26 @@
     "arabicText": "Arabic text of supplication 4",
     "translation": "Translation of supplication 4",
     "transliteration": "Transliteration of supplication 4"
+  },
+  {
+    "id": 13,
+    "title": "Масжиддан ",
+    "arabicText": "Arabic text of supplication 2",
+    "translation": "Translation of supplication 2",
+    "transliteration": "Transliteration of supplication 2"
+  },
+  {
+    "id": 14,
+    "title": "Азон ва  эшитганда",
+    "arabicText": "Arabic text of supplication 3",
+    "translation": "Translation of supplication 3",
+    "transliteration": "Transliteration of supplication 3"
+  },
+  {
+    "id": 15,
+    "title": "Намоз ",
+    "arabicText": "Arabic text of supplication 4",
+    "translation": "Translation of supplication 4",
+    "transliteration": "Transliteration of supplication 4"
   }
 ]

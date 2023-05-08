@@ -47,7 +47,7 @@
 		25DF20E82A012AB300631BE6 /* Zikr-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikr-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosApp.swift; sourceTree = "<group>"; };
 		25DF20ED2A012AB300631BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		25DF20EF2A012AB400631BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25DF20EF2A012AB400631BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Zikr-ios/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		25DF20F22A012AB400631BE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25DF20F82A012AB400631BE6 /* Zikr-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zikr-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DF20FC2A012AB400631BE6 /* Zikr_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosTests.swift; sourceTree = "<group>"; };

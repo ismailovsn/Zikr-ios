@@ -13,9 +13,10 @@ struct RowView: View {
     var body: some View {
         
         VStack {
-            Divider()
+            
             HStack{
                 Text(zikr.title)
+                    .padding()
                 Spacer()
             }
             

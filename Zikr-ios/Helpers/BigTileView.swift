@@ -24,7 +24,7 @@ struct BigTileView: View {
                 .fontWeight(.bold)
         }
         .padding()
-        .background(Color.white)
+        .background(Color("contentBackground"))
         .cornerRadius(20)
         .shadow(radius: 5)
         
