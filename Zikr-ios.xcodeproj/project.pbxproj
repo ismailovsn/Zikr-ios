@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256EE1E22A091C9D008BDE13 /* Damascus.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Damascus.ttc; sourceTree = "<group>"; };
 		25DF20E82A012AB300631BE6 /* Zikr-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikr-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosApp.swift; sourceTree = "<group>"; };
 		25DF20ED2A012AB300631BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256EE1E12A091971008BDE13 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				256EE1E22A091C9D008BDE13 /* Damascus.ttc */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		25DF20DF2A012AB300631BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +123,7 @@
 		25DF20EA2A012AB300631BE6 /* Zikr-ios */ = {
 			isa = PBXGroup;
 			children = (
+				256EE1E12A091971008BDE13 /* Font */,
 				25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */,
 				25DF20ED2A012AB300631BE6 /* ContentView.swift */,
 				25DF215C2A027F1B00631BE6 /* MainView.swift */,

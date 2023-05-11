@@ -10,38 +10,83 @@ import SwiftUI
 struct ZikrView: View {
     let zikr: Zikr
     
+    @State var tapCount = 33
+    
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                
+        Form {
+            Section {
                 HStack {
                     Spacer()
                     Text(zikr.arabicText)
-                        .font(.system(size: 24, design: .default))
-                        .multilineTextAlignment(.trailing)
-                        
+                        .font(.custom("Damascus", size: 30))
+                        .multilineTextAlignment (.trailing)
+                        .lineSpacing(15)
+                        .padding(5.0)
                 }
-                Divider()
-                Section("Перевод") {
-                    Text(zikr.translation)
-                        .font(.system(size: 18, weight: .medium, design: .default))
+                
+                HStack {
+                    Text("33 times")
+                    Spacer()
+                    Text("Бухорий")
                 }
-                Divider()
-                Text(zikr.transliteration)
-                    .font(.system(size: 18, weight: .medium, design: .default))
-                    .italic()
-                
-                
             }
-            .padding()
+            
+            Section {
+                Text(zikr.translation)
+                    .font(.custom("Times New Roman", size: 18))
+            } header: {
+                Text("Маъноси")
+                    .font(.subheadline)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color("contentForeground"))
+            }
+            
+            Section {
+                Text(zikr.transliteration)
+                    .font(.custom("Times New Roman",size: 18))
+                    .italic()
+            } header: {
+                Text("Уқилиши")
+                    .font(.subheadline)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color("contentForeground"))
+            }
         }
         .navigationTitle(zikr.title)
-        .navigationBarTitleDisplayMode(.inline)
+//        ScrollView {
+////            VStack(alignment: .leading, spacing: 20) {
+//                Form {
+//                    Section {
+////                        HStack {
+////                            Spacer()
+//                            Text(zikr.arabicText)
+//                                .font(.custom("Damascus", size: 24))
+//                                .multilineTextAlignment (.trailing)
+//                                .lineSpacing(15)
+////                        }
+//                    }
+//                    Divider()
+//
+//                    Text(zikr.translation)
+//                        .font(.custom("Times New Roman", size: 18))
+//
+//                    Divider()
+//                    Text(zikr.transliteration)
+//                        .font(.custom("Times New Roman",size: 18))
+//                        .italic()
+//
+////                }
+//            }
+//            .padding()
+//        }
+//        .navigationTitle(zikr.title)
     }
 }
 
 struct ZikrView_Previews: PreviewProvider {
     static var previews: some View {
-        ZikrView(zikr: Zikr(id: 1, title: "Sample Supplication", arabicText: "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ", translation: "In the name of Allah, the Most Gracious, the Most Merciful.", transliteration: "Bismillahir Rahmanir Rahim"))
+        NavigationView {
+            ZikrView(zikr: Zikr(id: 1, title: "Sample Supplication", arabicText: "اللَّهُمَّ إنِّي اسْألُكَ العَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إنِّي اسْألُكَ العَفْوَ وَالعَافِيَةَ فِي دِيْنِي وَدُنْيَايَ وَأهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَورَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوقِي وَأعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي", translation: "Аллоҳим, мен Сендан дунё ва охиратда офият сўрайман. Эй Раббим, динимда ва дунёимда, аҳлимда ва молимда авф ва офият сўрайман. Эй Раббим, авратимни бекит, хавфларимни омонликка айлантир. Эй Аллоҳим, мени олдимдан, орқамдан, ўнг томонимдан, чап томонимдан, устимдан сақлагин. Эй Раббим, остимдан ҳалок қилишингдан Сенинг азаматинг ила паноҳ тилайман.", transliteration: "Аллоҳумма инний ас`алукал ъафийата фиддунйа вал ахироҳ. Аллоҳумма инний ас`алукал ъафва вал ъафийата фий дийний ва дунйайа ва аҳлий ва маалий. Аллоҳуммастур ъавротий ва амин равъатий. Аллоҳуммаҳфазний мин байни йадаййа ва мин холфий ва ъан йамийний ва ъан шималий ва мин фавқий ва аъузу биъазоматика ан уғтаала мин таҳтий."))
+        }
     }
 }

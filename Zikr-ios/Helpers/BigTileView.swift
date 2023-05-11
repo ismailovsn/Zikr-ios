@@ -17,7 +17,8 @@ struct BigTileView: View {
                 .font(.system(size: 30))
                 .foregroundColor(Color("contentForeground"))
             
-            Text(title)                .foregroundColor(Color("contentForeground"))
+            Text(title)
+                .foregroundColor(Color("contentForeground"))
                 .fontWeight(.bold)
                 .padding(.trailing, 10)
         }
