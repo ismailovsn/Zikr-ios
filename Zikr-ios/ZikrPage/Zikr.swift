@@ -13,4 +13,6 @@ struct Zikr: Codable, Identifiable {
     let arabicText: String
     let translation: String
     let transliteration: String
+    var count: Int
+    let source: String
 }
