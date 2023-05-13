@@ -14,4 +14,6 @@ struct MorningEveningZikr: Identifiable, Codable {
     let translation: String
     let transliteration: String
     let type: String
+    let count: Int
+    let source: String
 }
