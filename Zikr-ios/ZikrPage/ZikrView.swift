@@ -51,33 +51,7 @@ struct ZikrView: View {
             }
         }
         .navigationTitle(zikr.title)
-//        ScrollView {
-////            VStack(alignment: .leading, spacing: 20) {
-//                Form {
-//                    Section {
-////                        HStack {
-////                            Spacer()
-//                            Text(zikr.arabicText)
-//                                .font(.custom("Damascus", size: 24))
-//                                .multilineTextAlignment (.trailing)
-//                                .lineSpacing(15)
-////                        }
-//                    }
-//                    Divider()
-//
-//                    Text(zikr.translation)
-//                        .font(.custom("Times New Roman", size: 18))
-//
-//                    Divider()
-//                    Text(zikr.transliteration)
-//                        .font(.custom("Times New Roman",size: 18))
-//                        .italic()
-//
-////                }
-//            }
-//            .padding()
-//        }
-//        .navigationTitle(zikr.title)
+        
     }
 }
 

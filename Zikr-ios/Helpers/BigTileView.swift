@@ -12,21 +12,30 @@ struct BigTileView: View {
     let imageName: String
     
     private var bigTileContent: some View {
-        VStack(alignment: .leading) {
-            Image(systemName: imageName)
-                .font(.system(size: 30))
-                .foregroundColor(Color("contentForeground"))
+        
+        ZStack {
             
-            Text(title)
-                .foregroundColor(Color("contentForeground"))
-                .fontWeight(.bold)
-                .padding(.trailing, 10)
+//            Color.clear.background(
+                Color("contentBackground")
+//            )
+            
+            HStack {
+                VStack(alignment: .leading) {
+                    Image(systemName: imageName)
+                        .font(.system(size: 30))
+                        .foregroundColor(.accentColor)
+                    
+                    Text(title)
+                        .foregroundColor(Color("contentForeground"))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
+                }
+                
+                .padding([.top, .bottom, .trailing])
+            }
         }
-        .padding()
-        .background(Color("contentBackground"))
         .cornerRadius(10)
         .shadow(radius: 5)
-        
     }
     
     var body: some View {

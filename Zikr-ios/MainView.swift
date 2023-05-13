@@ -30,27 +30,34 @@ struct MainView: View {
         .padding(.horizontal)
         .shadow(radius: 5)
     }
-    
+    // MARK: - Body
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
-                    VStack (spacing: 25) {
+//            GeometryReader { geo in
+                ScrollView(.vertical) {
+                    VStack (spacing: 15) {
                         HStack(spacing: 15) {
                             NavigationLink {
                                 MorningMenuView()
                             } label: {
                                 BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
+//                                    .frame(width: geo.size.width * 0.45)
                             }
                             
                             NavigationLink {
-                                MorningMenuView()
+                                EveningMenuView()
                             } label: {
                                 BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
+//                                    .frame(width: geo.size.width * 0.45)
                             }
                         }
+                        .padding(.horizontal)
+//                        .frame(width: geo.size.width * 0.9)
+                        
                         
                         zikrList
                     }
+//                }
             }
             .navigationTitle("Zikr")
             .background(Color("background"))

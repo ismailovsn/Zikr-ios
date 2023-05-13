@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct EveningMenuView: View {
+    let eveningAzkar: [MorningEveningZikr] = loadMorningEveningZikrData().filter { $0.type == "evening" }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(eveningAzkar) { morningEveningZikr in
+            NavigationLink {
+                MorningEveningZikrView(morningEveningZikr: morningEveningZikr)
+            } label: {
+                Text(morningEveningZikr.title)
+            }
+
+        }
+        .navigationTitle("Кечки зикрлар")
     }
 }
 
 struct EveningMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        EveningMenuView()
+        NavigationView {
+            EveningMenuView()
+        }
     }
 }
