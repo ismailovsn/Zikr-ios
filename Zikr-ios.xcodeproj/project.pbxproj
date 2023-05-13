@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256EE2902A0F3BA2008BDE13 /* MorningEveningZikrData.json in Resources */ = {isa = PBXBuildFile; fileRef = 256EE28F2A0F3BA2008BDE13 /* MorningEveningZikrData.json */; };
+		256EE2922A0F3D30008BDE13 /* MorningEveningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EE2912A0F3D30008BDE13 /* MorningEveningZikrView.swift */; };
 		25DF20EC2A012AB300631BE6 /* Zikr_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */; };
 		25DF20EE2A012AB300631BE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF20ED2A012AB300631BE6 /* ContentView.swift */; };
 		25DF20F02A012AB400631BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DF20EF2A012AB400631BE6 /* Assets.xcassets */; };
@@ -15,8 +17,8 @@
 		25DF21072A012AB400631BE6 /* Zikr_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21062A012AB400631BE6 /* Zikr_iosUITests.swift */; };
 		25DF21092A012AB400631BE6 /* Zikr_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21082A012AB400631BE6 /* Zikr_iosUITestsLaunchTests.swift */; };
 		25DF21162A012BAA00631BE6 /* BigTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21152A012BAA00631BE6 /* BigTileView.swift */; };
-		25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21532A0278BB00631BE6 /* MorningZikrView.swift */; };
-		25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21552A0278DE00631BE6 /* EveningZikrView.swift */; };
+		25DF21542A0278BB00631BE6 /* MorningMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21532A0278BB00631BE6 /* MorningMenuView.swift */; };
+		25DF21562A0278DE00631BE6 /* EveningMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF21552A0278DE00631BE6 /* EveningMenuView.swift */; };
 		25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215A2A027A7B00631BE6 /* SettingsView.swift */; };
 		25DF215D2A027F1B00631BE6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF215C2A027F1B00631BE6 /* MainView.swift */; };
 		25DF215F2A052AE600631BE6 /* ZikrData.json in Resources */ = {isa = PBXBuildFile; fileRef = 25DF215E2A052AE600631BE6 /* ZikrData.json */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		256EE1E22A091C9D008BDE13 /* Damascus.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Damascus.ttc; sourceTree = "<group>"; };
+		256EE28F2A0F3BA2008BDE13 /* MorningEveningZikrData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MorningEveningZikrData.json; sourceTree = "<group>"; };
+		256EE2912A0F3D30008BDE13 /* MorningEveningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningEveningZikrView.swift; sourceTree = "<group>"; };
 		25DF20E82A012AB300631BE6 /* Zikr-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikr-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosApp.swift; sourceTree = "<group>"; };
 		25DF20ED2A012AB300631BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +60,8 @@
 		25DF21062A012AB400631BE6 /* Zikr_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosUITests.swift; sourceTree = "<group>"; };
 		25DF21082A012AB400631BE6 /* Zikr_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		25DF21152A012BAA00631BE6 /* BigTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTileView.swift; sourceTree = "<group>"; };
-		25DF21532A0278BB00631BE6 /* MorningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningZikrView.swift; sourceTree = "<group>"; };
-		25DF21552A0278DE00631BE6 /* EveningZikrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningZikrView.swift; sourceTree = "<group>"; };
+		25DF21532A0278BB00631BE6 /* MorningMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningMenuView.swift; sourceTree = "<group>"; };
+		25DF21552A0278DE00631BE6 /* EveningMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningMenuView.swift; sourceTree = "<group>"; };
 		25DF215A2A027A7B00631BE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = "Zikr-ios/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
 		25DF215C2A027F1B00631BE6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		25DF215E2A052AE600631BE6 /* ZikrData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ZikrData.json; sourceTree = "<group>"; };
@@ -125,14 +129,16 @@
 			children = (
 				256EE1E12A091971008BDE13 /* Font */,
 				25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */,
+				256EE2912A0F3D30008BDE13 /* MorningEveningZikrView.swift */,
 				25DF20ED2A012AB300631BE6 /* ContentView.swift */,
 				25DF215C2A027F1B00631BE6 /* MainView.swift */,
 				25DF215A2A027A7B00631BE6 /* SettingsView.swift */,
 				25DF21572A02790B00631BE6 /* Helpers */,
 				25DF21692A05DC0900631BE6 /* ZikrPage */,
-				25DF21682A05DBF600631BE6 /* MorningEveningPage */,
+				25DF21682A05DBF600631BE6 /* MorningEveningMenu */,
 				25DF21622A052B5400631BE6 /* DataLoader.swift */,
 				25DF215E2A052AE600631BE6 /* ZikrData.json */,
+				256EE28F2A0F3BA2008BDE13 /* MorningEveningZikrData.json */,
 				25DF20EF2A012AB400631BE6 /* Assets.xcassets */,
 				25DF20F12A012AB400631BE6 /* Preview Content */,
 			);
@@ -173,13 +179,13 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		25DF21682A05DBF600631BE6 /* MorningEveningPage */ = {
+		25DF21682A05DBF600631BE6 /* MorningEveningMenu */ = {
 			isa = PBXGroup;
 			children = (
-				25DF21532A0278BB00631BE6 /* MorningZikrView.swift */,
-				25DF21552A0278DE00631BE6 /* EveningZikrView.swift */,
+				25DF21532A0278BB00631BE6 /* MorningMenuView.swift */,
+				25DF21552A0278DE00631BE6 /* EveningMenuView.swift */,
 			);
-			path = MorningEveningPage;
+			path = MorningEveningMenu;
 			sourceTree = "<group>";
 		};
 		25DF21692A05DC0900631BE6 /* ZikrPage */ = {
@@ -298,6 +304,7 @@
 				25DF20F32A012AB400631BE6 /* Preview Assets.xcassets in Resources */,
 				25DF20F02A012AB400631BE6 /* Assets.xcassets in Resources */,
 				25DF215F2A052AE600631BE6 /* ZikrData.json in Resources */,
+				256EE2902A0F3BA2008BDE13 /* MorningEveningZikrData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,11 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256EE2922A0F3D30008BDE13 /* MorningEveningZikrView.swift in Sources */,
 				25DF21612A052B2000631BE6 /* Zikr.swift in Sources */,
 				25DF21162A012BAA00631BE6 /* BigTileView.swift in Sources */,
 				25DF215D2A027F1B00631BE6 /* MainView.swift in Sources */,
-				25DF21542A0278BB00631BE6 /* MorningZikrView.swift in Sources */,
-				25DF21562A0278DE00631BE6 /* EveningZikrView.swift in Sources */,
+				25DF21542A0278BB00631BE6 /* MorningMenuView.swift in Sources */,
+				25DF21562A0278DE00631BE6 /* EveningMenuView.swift in Sources */,
 				25DF215B2A027A7B00631BE6 /* SettingsView.swift in Sources */,
 				25DF21652A05C6D300631BE6 /* ZikrView.swift in Sources */,
 				25DF20EE2A012AB300631BE6 /* ContentView.swift in Sources */,

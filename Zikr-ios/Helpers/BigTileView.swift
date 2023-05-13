@@ -31,13 +31,13 @@ struct BigTileView: View {
     
     var body: some View {
         Group {
-            if title == "In the Morning" {
-                NavigationLink(destination: MorningZikrView()) {
+            if title == "Тонгги зикрлар" {
+                NavigationLink(destination: MorningMenuView()) {
                     bigTileContent
                 }
                 .buttonStyle(PlainButtonStyle())
             } else {
-                NavigationLink(destination: EveningZikrView()) {
+                NavigationLink(destination: EveningMenuView()) {
                     bigTileContent
                 }
                 .buttonStyle(PlainButtonStyle())
