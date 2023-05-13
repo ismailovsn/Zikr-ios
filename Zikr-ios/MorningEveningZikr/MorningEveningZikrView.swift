@@ -11,7 +11,39 @@ struct MorningEveningZikrView: View {
     let morningEveningZikr: MorningEveningZikr
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section {
+                HStack {
+                    Spacer()
+                    Text(morningEveningZikr.arabicText)
+                        .font(.custom("Damascus", size: 30))
+                        .multilineTextAlignment (.trailing)
+                        .lineSpacing(15)
+                        .padding(5.0)
+                }            }
+            
+            Section {
+                Text(morningEveningZikr.translation)
+                    .font(.custom("Times New Roman", size: 18))
+            } header: {
+                Text("Маъноси")
+                    .font(.subheadline)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color("contentForeground"))
+            }
+            
+            Section {
+                Text(morningEveningZikr.transliteration)
+                    .font(.custom("Times New Roman",size: 18))
+                    .italic()
+            } header: {
+                Text("Уқилиши")
+                    .font(.subheadline)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color("contentForeground"))
+            }
+        }
+        .navigationTitle(morningEveningZikr.title)
     }
 }
 
