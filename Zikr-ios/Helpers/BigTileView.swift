@@ -30,19 +30,7 @@ struct BigTileView: View {
     }
     
     var body: some View {
-        Group {
-            if title == "Тонгги зикрлар" {
-                NavigationLink(destination: MorningMenuView()) {
-                    bigTileContent
-                }
-                .buttonStyle(PlainButtonStyle())
-            } else {
-                NavigationLink(destination: EveningMenuView()) {
-                    bigTileContent
-                }
-                .buttonStyle(PlainButtonStyle())
-            }
-        }
+        bigTileContent
     }
 }
 

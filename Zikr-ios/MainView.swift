@@ -36,9 +36,17 @@ struct MainView: View {
             ScrollView(.vertical) {
                     VStack (spacing: 25) {
                         HStack(spacing: 15) {
-                            BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
+                            NavigationLink {
+                                MorningMenuView()
+                            } label: {
+                                BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
+                            }
                             
-                            BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
+                            NavigationLink {
+                                MorningMenuView()
+                            } label: {
+                                BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
+                            }
                         }
                         
                         zikrList
