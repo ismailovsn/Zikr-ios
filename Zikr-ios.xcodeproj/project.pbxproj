@@ -102,12 +102,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		256EE1E12A091971008BDE13 /* Font */ = {
+		256EE1E12A091971008BDE13 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				256EE1E22A091C9D008BDE13 /* Damascus.ttc */,
 			);
-			path = Font;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		256EE2962A0F4DA7008BDE13 /* MorningEveningZikr */ = {
@@ -118,6 +118,25 @@
 				25DF21682A05DBF600631BE6 /* MorningEveningMenu */,
 			);
 			path = MorningEveningZikr;
+			sourceTree = "<group>";
+		};
+		256EE29E2A10BDBB008BDE13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				256EE1E12A091971008BDE13 /* Fonts */,
+				256EE29F2A10BDDA008BDE13 /* Data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		256EE29F2A10BDDA008BDE13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				25DF215E2A052AE600631BE6 /* ZikrData.json */,
+				256EE28F2A0F3BA2008BDE13 /* MorningEveningZikrData.json */,
+				256EE29B2A0F936E008BDE13 /* add_extra_data.py */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		25DF20DF2A012AB300631BE6 = {
@@ -143,7 +162,6 @@
 		25DF20EA2A012AB300631BE6 /* Zikr-ios */ = {
 			isa = PBXGroup;
 			children = (
-				256EE1E12A091971008BDE13 /* Font */,
 				25DF20EB2A012AB300631BE6 /* Zikr_iosApp.swift */,
 				25DF20ED2A012AB300631BE6 /* ContentView.swift */,
 				25DF215C2A027F1B00631BE6 /* MainView.swift */,
@@ -153,9 +171,7 @@
 				256EE2962A0F4DA7008BDE13 /* MorningEveningZikr */,
 				25DF21622A052B5400631BE6 /* DataLoader.swift */,
 				256EE2972A0F4EAF008BDE13 /* MorningEveningDataLoader.swift */,
-				25DF215E2A052AE600631BE6 /* ZikrData.json */,
-				256EE28F2A0F3BA2008BDE13 /* MorningEveningZikrData.json */,
-				256EE29B2A0F936E008BDE13 /* add_extra_data.py */,
+				256EE29E2A10BDBB008BDE13 /* Resources */,
 				25DF20EF2A012AB400631BE6 /* Assets.xcassets */,
 				25DF20F12A012AB400631BE6 /* Preview Content */,
 			);
