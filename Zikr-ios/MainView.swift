@@ -40,14 +40,14 @@ struct MainView: View {
                             NavigationLink {
                                 MorningMenuView()
                             } label: {
-                                BigTileView(title: "Тонгги зикрлар", imageName: "sun.haze.circle.fill")
+                                BigTileView(title: "Тонгги Зикрлар", imageName: "sun.haze.circle.fill")
 //                                    .frame(width: geo.size.width * 0.45)
                             }
                             
                             NavigationLink {
                                 EveningMenuView()
                             } label: {
-                                BigTileView(title: "Кечки зикрлар", imageName: "moon.haze.circle.fill")
+                                BigTileView(title: "Кечки Зикрлар", imageName: "moon.haze.circle.fill")
 //                                    .frame(width: geo.size.width * 0.45)
                             }
                         }

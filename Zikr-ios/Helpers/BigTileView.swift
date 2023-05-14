@@ -30,7 +30,7 @@ struct BigTileView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                 }
-                
+                .padding(.leading, 5)
                 .padding([.top, .bottom, .trailing])
             }
         }

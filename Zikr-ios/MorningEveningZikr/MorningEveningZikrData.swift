@@ -16,4 +16,6 @@ struct MorningEveningZikr: Identifiable, Codable {
     let type: String
     let count: Int
     let source: String
+    
+    let isQuran: Bool
 }
